@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Visualize Art Critics - Data Quality</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1>Visualize Art Critics</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Intro</a></li>
+						<li><a href="test.html">User Tests</a></li>
+						<li><a href="data.html">Data Quality</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Work -->
+			<section id="work" class="main primary">
+				<div class="content">
+					<header>
+						<h2>Complete</h2>
+						<p>The data is not complete. A few critics did not offer their preference to some artists. In those cases where preference is missing, we assumed the critics have “no opinion” towards the artists, and assigned a value of 0.</p>
+						<div class="gallery">
+							<article class="from-left">
+								<p style="color: gray; font-size: 8pt;">Missing data summary 1</p>
+								<a href="images/missing.png" class="image fit"><img src="images/missing.png" title="Missing data summary 1" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<p style="color: gray; font-size: 8pt;">Missing data summary 2</p>
+								<a href="images/missing2.png" class="image fit"><img src="images/missing2.png" title="Missing data summary 2" alt="" /></a>
+							</article>
+						</div>
+
+						<h2>Coherent</h2>
+						<p>The data is coherent. For the artist preference data, we remapped the original categorical data to numerical so that it makes more sense to calculate an average score to measure preference. For other attributes, we used them as categorical data. We also checked the distribution for some attributes, such as Salary, Years in Journalism, to make sure that the data has variation.</p>
+						<div class="gallery">
+							<article class="from-left">
+								<p style="color: gray; font-size: 8pt;">Years of Experience Distribution</p>
+								<a href="images/experience.png" class="image fit"><img src="images/experience.png" title="Experience" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<p style="color: gray; font-size: 8pt;">Income Distribution</p>
+								<a href="images/income.png" class="image fit"><img src="images/income.png" title="Income" alt="" /></a>
+							</article>
+						</div>
+
+						<h2>Correct</h2>
+						<p>The data is correct. We compared the data distribution within each attribute with its documentation, and we were able to verify that all data point falls within the documented range for each attribute.</p>
+
+						<h2>Accountability</h2>
+						<p>The data comes from an accountable source. The data is collected through a study conducted by the National Arts Journalism Program, which is based at Columbia University’s Graduate School of Journalism and funded by The Pew Charitable Trusts.</p>
+
+					</header>
+
+
+
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Icons -->
+<!-- 					<ul class="actions">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+					</ul> -->
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; Visualize Art Critics</li><li>Interactive Data Science 2018</li>
+					</ul>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
